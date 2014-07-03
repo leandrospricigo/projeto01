@@ -14,19 +14,19 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active">
-                  <a href="./index.php">Home</a>
+                  <a href="home">Home</a>
               </li>
               <li class="">
-                <a href="index.php?page=empresa">Empresa</a>
+                <a href="empresa">Empresa</a>
               </li>
               <li class="">
-                  <a href="index.php?page=produtos">Produtos</a>
+                  <a href="produtos">Produtos</a>
               </li>
               <li class="">
-                  <a href="index.php?page=servicos">Serviços</a>
+                  <a href="servicos">Serviços</a>
               </li>
               <li class="">
-                  <a href="index.php?page=contato">Contato</a>
+                  <a href="contato">Contato</a>
               </li>
              
             </ul>

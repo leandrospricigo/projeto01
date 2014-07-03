@@ -1,3 +1,9 @@
+<?php require_once("header.php"); ?>
+<?php require_once("menu.php"); ?>
+<?php
+date_default_timezone_set('America/Sao_Paulo');
+?>
+
 <h3>Página de contato</h3>
 
 <?php if(!$_REQUEST['submit']):?>
@@ -15,3 +21,5 @@
   
  </form>
 <?php endif;?>
+
+<?php require_once("footer.php"); ?>
