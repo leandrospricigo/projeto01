@@ -28,7 +28,11 @@
               <li class="">
                   <a href="contato">Contato</a>
               </li>
-             
+              <li class="">
+                  <form name="busca" method="post" action="resultados.php">
+                      Buscar: <input type="text" name="buscar" /> <input type="submit" value="Ir" />
+                  </form>
+              </li>
             </ul>
           </div>
         </div>
