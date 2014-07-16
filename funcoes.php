@@ -10,7 +10,8 @@ $key = array_search($path, $paginas);
 
 if ($key > 0)
 {
-  $pagina = $path.".php";  
+    $pagina = $path.".php";
+  
 }else{
   $pagina = "home.php";
 }

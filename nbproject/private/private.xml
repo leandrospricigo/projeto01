@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/PROJETOS/PHP/curso/projeto01/conexao.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/logout.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/painel.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/menu.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/cadusuarios.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/cabecalho.php</file>
             <file>file:/F:/PROJETOS/PHP/curso/projeto01/produtos.php</file>
-            <file>file:/F:/PROJETOS/PHP/curso/projeto01/fixtures.php</file>
-            <file>file:/F:/PROJETOS/PHP/curso/projeto01/menu.php</file>
-            <file>file:/F:/PROJETOS/PHP/curso/projeto01/index.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/cadprodutos.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/rodape.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/login.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/valida_login.php</file>
+            <file>file:/F:/PROJETOS/PHP/curso/projeto01/admin/cadservicos.php</file>
         </group>
     </open-files>
 </project-private>

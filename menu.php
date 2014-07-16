@@ -29,6 +29,9 @@
                   <a href="contato">Contato</a>
               </li>
               <li class="">
+                  <a href="../admin/login.php">Área Restrita</a>
+              </li>
+              <li class="">
                   <form name="busca" method="post" action="resultados.php">
                       Buscar: <input type="text" name="buscar" /> <input type="submit" value="Ir" />
                   </form>
