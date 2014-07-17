@@ -1,3 +1,15 @@
+<?php 
+             session_start(); 
+             if((!isset ($_SESSION['usuario']) == true) and (!isset ($_SESSION['senha']) == true)) 
+                 { 
+                    unset($_SESSION['usuario']); 
+                    unset($_SESSION['senha']); 
+                    header('location:../admin/login.php'); 
+                    
+                 }
+                    $logado = $_SESSION['usuario']; 
+?>
+
 <?php require_once ("../conexao.php"); ?>
 <?php require_once("../admin/cabecalho.php"); ?>
   <tr>

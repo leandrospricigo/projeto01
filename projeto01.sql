@@ -29,7 +29,7 @@ CREATE TABLE `produtos` (
   `valor_unit` decimal(9,2) DEFAULT NULL,
   `qtd_estoque` int(11) DEFAULT NULL,
   PRIMARY KEY (`idprodutos`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='tabela de produtos do site';
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='tabela de produtos do site';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES (4,'Mouse USV','UN',25.50,10),(5,'Teclado USB','UN',30.00,15),(6,'Monitor LCD 17\"','UN',380.00,5);
+INSERT INTO `produtos` VALUES (4,'Mouse USV','UN',25.50,10),(5,'Teclado USB','UN',30.00,15),(6,'Monitor LCD 17\"','UN',380.00,5),(7,'Notebook LG 14','UN',1500.00,3);
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,7 +54,7 @@ CREATE TABLE `servicos` (
   `descricao` varchar(50) DEFAULT NULL,
   `valor` decimal(9,2) DEFAULT NULL,
   PRIMARY KEY (`idservicos`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='tabela de servicos do site';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='tabela de servicos do site';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,8 +63,34 @@ CREATE TABLE `servicos` (
 
 LOCK TABLES `servicos` WRITE;
 /*!40000 ALTER TABLE `servicos` DISABLE KEYS */;
-INSERT INTO `servicos` VALUES (1,'Formatação (sem backup)',80.00),(2,'Formatação (Com Backup)',120.00),(3,'Limpeza Física',50.00),(4,'Recuperação de Dados',200.00);
+INSERT INTO `servicos` VALUES (1,'Formatação (sem backup)',80.00),(2,'Formatação (Com Backup)',120.00),(3,'Limpeza Física',50.00),(5,'Instalação de Rede',150.00);
 /*!40000 ALTER TABLE `servicos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `usuarios` (
+  `idusuario` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(45) DEFAULT NULL,
+  `senha` varchar(90) DEFAULT NULL,
+  `tipo` char(1) DEFAULT NULL,
+  PRIMARY KEY (`idusuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='tabela de usuarios do sistema';
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `usuarios`
+--
+
+LOCK TABLES `usuarios` WRITE;
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` VALUES (1,'leandro','$2y$10$rcmP0nryYmCGYS0H7GcasewB84Oyjn4sivrZrqLfrH.xwOtoMA54e','A'),(2,'usuario','$2y$10$1KVKoMTe.yrmRAl1jGpctuLEzGxsA.mv3hcIOVB8w.CB3mN9xZXC6','U');
+/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -76,4 +102,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-07-09 10:21:18
+-- Dump completed on 2014-07-17  9:30:32
