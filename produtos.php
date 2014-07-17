@@ -9,10 +9,10 @@ $sql = "select * from produtos order by qtd_estoque desc";
 $stmt = $conexao->prepare($sql);
 $stmt->execute();
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$id=5;
-$sql_promocao="select descricao,valor_unit from produtos where idprodutos = :id";
+$valor=1500;
+$sql_promocao="select descricao,valor_unit from produtos where valor_unit = :valor";
 $stmt_pro = $conexao->prepare($sql_promocao);
-$stmt_pro->bindValue("id",$id);
+$stmt_pro->bindValue("valor",$valor);
 $stmt_pro->execute();
 $promoção = $stmt_pro->fetch(PDO::FETCH_ASSOC);
 ?>

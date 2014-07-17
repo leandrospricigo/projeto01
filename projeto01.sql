@@ -29,7 +29,7 @@ CREATE TABLE `produtos` (
   `valor_unit` decimal(9,2) DEFAULT NULL,
   `qtd_estoque` int(11) DEFAULT NULL,
   PRIMARY KEY (`idprodutos`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COMMENT='tabela de produtos do site';
+) ENGINE=InnoDB AUTO_INCREMENT=336 DEFAULT CHARSET=utf8 COMMENT='tabela de produtos do site';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES (4,'Mouse USV','UN',25.50,10),(5,'Teclado USB','UN',30.00,15),(6,'Monitor LCD 17\"','UN',380.00,5),(7,'Notebook LG 14','UN',1500.00,3);
+INSERT INTO `produtos` VALUES (332,'Mouse USB','UN',25.00,10),(333,'Teclado USB','UN',20.00,15),(334,'Monitor LCD 17','UN',380.00,5),(335,'Notebook LG','UN',1500.00,2);
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,7 +54,7 @@ CREATE TABLE `servicos` (
   `descricao` varchar(50) DEFAULT NULL,
   `valor` decimal(9,2) DEFAULT NULL,
   PRIMARY KEY (`idservicos`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='tabela de servicos do site';
+) ENGINE=InnoDB AUTO_INCREMENT=241 DEFAULT CHARSET=utf8 COMMENT='tabela de servicos do site';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +63,7 @@ CREATE TABLE `servicos` (
 
 LOCK TABLES `servicos` WRITE;
 /*!40000 ALTER TABLE `servicos` DISABLE KEYS */;
-INSERT INTO `servicos` VALUES (1,'Formatação (sem backup)',80.00),(2,'Formatação (Com Backup)',120.00),(3,'Limpeza Física',50.00),(5,'Instalação de Rede',150.00);
+INSERT INTO `servicos` VALUES (238,'Formatacao(sem backup)',80.00),(239,'Formatacao(com backup)',120.00),(240,'Limpeza Fisica',50.00);
 /*!40000 ALTER TABLE `servicos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -102,4 +102,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-07-17  9:30:32
+-- Dump completed on 2014-07-17 16:10:35

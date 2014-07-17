@@ -12,7 +12,8 @@ echo 'existe';
 ?>
 
 <?php
-criardb();
+#criardb();
+incluirdados();
 ?>
 <div id="conteudo">
 	<?php require_once(arquivo()); ?>

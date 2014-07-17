@@ -18,7 +18,7 @@ Assunto -> <?php echo $_POST["assunto"]; ?>
 Mensagem -> <?php echo $_POST["mensagem"]; ?>
 <br> 
  
-<a href="index.php">Voltar para Home</a>
+<a href="home.php">Voltar para Home</a>
 
 
 <?php require_once("footer.php"); ?>
