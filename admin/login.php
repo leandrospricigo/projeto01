@@ -1,8 +1,8 @@
-<html>
+<!--<html>
 <head>
 <title>Login para Área Administrativa</title>
 </head>
-<body>
+<body> -->
 <h1>Tela de Login</h1>
 <form method="post" action="valida_login.php">
 Usuario:<br />
@@ -14,5 +14,5 @@ Senha:<br />
 <input type="submit" value="Efetuar Login" />
 <input type="reset" value="Cancelar" />
 </form>
-</body>
-</html>
+<!--</body>
+</html> --> 

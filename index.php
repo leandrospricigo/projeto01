@@ -4,18 +4,10 @@
 <?php
 date_default_timezone_set('America/Sao_Paulo');
 ?>
-<?php require_once("fixtures.php"); ?>
-<?php 
-if (file_exists($path)) {
-echo 'existe'; 
-}
-?>
 
-<?php
-#criardb();
-incluirdados();
-?>
 <div id="conteudo">
-	<?php require_once(arquivo()); ?>
+	<?php 
+            require_once(arquivo()); 
+        ?>
 </div>
 <?php require_once("footer.php"); ?>
